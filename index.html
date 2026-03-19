@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server SMP Sea Minh - Minecraft 1.21.11</title>
+    <style>
+        :root {
+            --bg-color: #f0f8ff; /* Alice Blue */
+            --primary-blue: #87ceeb; /* Sky Blue */
+            --dark-blue: #4682b4; /* Steel Blue */
+            --white: #ffffff;
+            --text-color: #334155;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-blue), var(--white));
+            padding: 50px 20px;
+            text-align: center;
+            border-bottom: 3px solid var(--white);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: var(--white);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 25px rgba(0, 119, 190, 0.1);
+            border-left: 5px solid var(--primary-blue);
+        }
+
+        h1, h2, h3 { color: var(--dark-blue); }
+
+        .ip-section {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .ip-box {
+            background: var(--bg-color);
+            border: 2px dashed var(--dark-blue);
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            color: var(--dark-blue);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .stat-item {
+            background: var(--primary-blue);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        /* Crafting Table Style */
+        .crafting-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .crafting-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 80px);
+            grid-template-rows: repeat(3, 80px);
+            gap: 8px;
+            background: #bdc3c7;
+            padding: 12px;
+            border-radius: 5px;
+            border: 4px solid #7f8c8d;
+        }
+
+        .slot {
+            background: #ecf0f1;
+            border: 2px solid #95a5a6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 11px;
+            text-align: center;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .enchant-tag {
+            display: inline-block;
+            background: #e0f2fe;
+            color: #0369a1;
+            padding: 2px 10px;
+            border-radius: 20px;
+            font-size: 13px;
+            margin-right: 5px;
+            font-weight: 600;
+        }
+
+        .restart-info {
+            color: #ef4444;
+            font-weight: bold;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🌊 SERVER SMP SEA MINH 🌊</h1>
+    <p>Phiên bản chính: <b>1.21.11</b> (Hỗ trợ đa phiên bản)</p>
+    <p class="restart-info">⚠️ Server tự động khởi động lại mỗi 30 phút!</p>
+</header>
+
+<div class="container">
+    
+    <div class="card">
+        <h2>📍 Địa Chỉ Kết Nối</h2>
+        <div class="ip-section">
+            <div class="ip-box">IP Chính: seaminh.pikamc.vn:25848</div>
+            <div class="ip-box">IP Phụ: twoname.seaminh.pikamc.vn:25848</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>🖥️ Cấu Hình Máy Chủ</h2>
+        <div class="stats-grid">
+            <div class="stat-item"><b>RAM</b><br>9 GB</div>
+            <div class="stat-item"><b>CPU</b><br>5 Core</div>
+            <div class="stat-item"><b>Map Size</b><br>15,000 Blocks</div>
+        </div>
+        <p style="margin-top: 15px;"><b>Dòng CPU hỗ trợ:</b> E5V4, Gold 6138, Gold 6150</p>
+    </div>
+
+    <div class="card">
+        <h2>🛠️ Vật Phẩm Custom</h2>
+        <h3>1. Que Cơ Bản</h3>
+        <p>Công thức: <b>9 Que gỗ</b> lấp đầy bàn chế tạo.</p>
+        <p>
+            <span class="enchant-tag">Sharpness I</span>
+            <span class="enchant-tag">Knockback</span>
+        </p>
+
+        <hr style="border: 0.5px solid #eee; margin: 20px 0;">
+
+        <h3>2. Mace Huyền Thoại</h3>
+        <p>Vũ khí cấp cao nhất với sức mạnh kinh hoàng:</p>
+        <div style="margin-bottom: 15px;">
+            <span class="enchant-tag" style="background: #fef3c7; color: #92400e;">Density VI</span>
+            <span class="enchant-tag" style="background: #fee2e2; color: #b91c1c;">Fire Aspect III</span>
+            <span class="enchant-tag" style="background: #dcfce7; color: #15803d;">Wind Burst III</span>
+        </div>
+
+        <div class="crafting-container">
+            <p><b>Công thức chế tạo Mace Huyền Thoại:</b></p>
+            <div class="crafting-grid">
+                <div class="slot">Kim cương</div>
+                <div class="slot">Mảnh thạch tím</div>
+                <div class="slot">Kim cương</div>
+                <div class="slot">Ngọc Ender</div>
+                <div class="slot" style="background: #fff3cd; border-color: #f1c40f;">MACE</div>
+                <div class="slot">Ngọc Ender</div>
+                <div class="slot">Kim cương</div>
+                <div class="slot">Cầu gió</div>
+                <div class="slot">Kim cương</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer style="text-align: center; padding: 30px; color: var(--dark-blue);">
+    &copy; 2026 Sea Minh SMP. Have a good game!
+</footer>
+
+</body>
+</html>
